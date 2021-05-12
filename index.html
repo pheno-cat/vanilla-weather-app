@@ -29,6 +29,10 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- AXIOS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <title>Weather App</title>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
@@ -37,11 +41,11 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>Dallas</h1>
+            <h1 id="city"></h1>
 
             <ul>
               <li>Friday 05:00</li>
-              <li>Clear</li>
+              <li id="weather-description"></li>
             </ul>
           </div>
           <div class="row">
@@ -51,16 +55,15 @@
                   <i class="fas fa-sun"></i>
                 </div>
                 <div class="">
-                  <strong> 12</strong>
+                  <strong id="temperature"></strong>
                   <span class="units">&deg;F | &deg;C</span>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 73%</li>
-                <li>Wind: 2 km/h</li>
+                <li>Humidity: <span id="humidity"></span></li>
+                <li>Wind: <span id="wind-speed"></span> km/h</li>
               </ul>
             </div>
           </div>
