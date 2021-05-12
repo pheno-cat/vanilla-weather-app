@@ -22,45 +22,58 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- FONT AWESOME -->
+
+    <script
+      src="https://kit.fontawesome.com/a41a5d2354.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Weather App</title>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
     <div class="container">
+      <div class="weather-app-wrapper">
         <div class="weather-app">
-      <h1>Dallas</h1>
-      
-        <ul>
-          <li>Friday 05:00</li>
-          <li>Clear</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://lh3.googleusercontent.com/proxy/go3H_Dxeo034SwufTLl5P9E2d0Baymsg_tTyKGAUvCK_J5LjOyciRhBnAgeZNDO6M9bAWDdV7Ma_8Ook1wy4H0-wplXXY7L4pmvNJkk0Rww"
-              width="125"
-              alt=""
-            />
-            12&deg;F | &deg;C
-          </div>
-          <div class="col-6">
+          <div class="overview">
+            <h1>Dallas</h1>
+
             <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 73%</li>
-              <li>Wind: 2 km/h</li>
+              <li>Friday 05:00</li>
+              <li>Clear</li>
             </ul>
           </div>
-          <small>
-            <a
-              target="_blank"
-              href="https://github.com/pheno-cat/vanilla-weather-app.git"
-              >Open-source code</a
-            >
-            by Cat Jalomo</small
-          >
+          <div class="row">
+            <div class="col-6">
+              <div class="weather-temp d-flex flex-row">
+                <div class="icon">
+                  <i class="fas fa-sun"></i>
+                </div>
+                <div class="">
+                  <strong> 12</strong>
+                  <span class="units">&deg;F | &deg;C</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 0%</li>
+                <li>Humidity: 73%</li>
+                <li>Wind: 2 km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </h2>
+        <small>
+          <a
+            target="_blank"
+            href="https://github.com/pheno-cat/vanilla-weather-app.git"
+            >Open-source code</a
+          >
+          by Cat Jalomo</small
+        >
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
