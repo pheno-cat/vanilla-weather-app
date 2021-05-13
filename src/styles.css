@@ -63,7 +63,7 @@ li:first-letter {
   top: -34px;
 }
 
-.fa-sun {
-  font-size: 60px;
-  margin-right: 10px;
+#icon {
+  margin: 0;
+  padding: 0;
 }
