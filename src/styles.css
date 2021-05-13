@@ -114,6 +114,11 @@ a:hover {
   text-decoration: none;
 }
 
+.weather-forecast {
+  color: rgb(135, 135, 135);
+  margin-top: 20px;
+}
+
 #icon {
   margin: 0;
   padding: 0;
