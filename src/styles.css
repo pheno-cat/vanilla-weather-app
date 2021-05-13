@@ -63,7 +63,23 @@ li:first-letter {
   top: -34px;
 }
 
+.weather-temp .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temp .active:hover {
+  text-decoration: none;
+}
+
+.weather-temp #fahrenheit-link,
+.weather-temp #celsius-link {
+  text-decoration: none;
+}
+
 #icon {
   margin: 0;
   padding: 0;
+  width: 60px;
 }
