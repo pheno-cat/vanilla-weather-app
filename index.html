@@ -33,14 +33,22 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Weather App</title>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container mt-5 bg">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <form id="search-form" class="mb-3">
+          <form id="search-form" class="mb-4 mt-2">
             <div class="row">
               <div class="col-md-9">
                 <input
@@ -60,8 +68,8 @@
               </div>
             </div>
           </form>
-          <div class="overview">
-            <h1 id="city"></h1>
+          <div class="overview mt-4">
+            <h1 class="mb-3" id="city"></h1>
             <ul>
               <li>Last updated: <span id="date"></span></li>
               <li id="weather-description"></li>

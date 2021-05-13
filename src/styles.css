@@ -1,5 +1,19 @@
-body {
+:root {
+  --primary-color: #ab3071;
+  --primary-font: "Marck Script", cursive;
+  --secondary-font: "Raleway", sans-serif;
+}
+
+body,
+html {
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url("pink-landscape.jpeg");
+  height: 100%;
+  font-family: var(--secondary-font);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 h1 {
@@ -31,10 +45,32 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+a {
+  color: #f0a263;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  font-style: italic;
+  color: #c45381;
+}
+
+.btn {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.form-control {
+  border: 1px solid var(--primary-color);
+}
+
 .weather-app {
   padding: 20px;
-  border: 1px solid #aaa;
+  border: 1px solid #ab3071;
   border-radius: 5px;
+  background: white;
 }
 
 .weather-app-wrapper {
@@ -81,5 +117,11 @@ li:first-letter {
 #icon {
   margin: 0;
   padding: 0;
-  width: 60px;
+  width: 65px;
+}
+
+#city {
+  font-family: var(--primary-font);
+  font-size: 50px;
+  color: var(--primary-color);
 }
