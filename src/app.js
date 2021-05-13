@@ -45,9 +45,22 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "0959b7dd2ee575dc2ebb67ad205095e4";
-let city = "Ballinger";
-let units = "imperial";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+function search(city) {
+  let apiKey = "0959b7dd2ee575dc2ebb67ad205095e4";
 
-axios.get(apiUrl).then(displayTemperature);
+  let units = "imperial";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("Dallas");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
