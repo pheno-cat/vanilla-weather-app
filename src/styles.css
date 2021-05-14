@@ -52,6 +52,14 @@ a {
   font-size: 14px;
 }
 
+hr {
+  color: var(--primary-color);
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 a:hover {
   font-style: italic;
   color: #c45381;
@@ -119,10 +127,15 @@ a:hover {
   margin-top: 20px;
 }
 
+.max-temp {
+  color: black;
+}
+
 #icon {
   margin: 0;
   padding: 0;
   width: 65px;
+  height: auto;
 }
 
 #city {
